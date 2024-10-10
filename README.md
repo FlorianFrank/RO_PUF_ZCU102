@@ -11,3 +11,14 @@ Operation:
 
 The code was originaly implemented for Xilinx Artix-7 FPGAs but is currently modified to support Xlinx Ultrascale+ architectures. 
 
+Configuration: 
+
+The design uses the USB UART interface of the ZCU102 therefore can be accedded for example using putty over /tty/USBx. 
+
+The output can be configured by the switches of SW8. 
+
+| SW[0]    | SW[1]   | Result |
+| -------- | ------- | ------ |
+| 0        |    0    | Return PUF result directly |
+| 1 | 0     | Return error corrected result |
+| 0    | 1    | Corrected and hashed result |
